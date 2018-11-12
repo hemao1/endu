@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="__PUBLIC__/admin/admin-style.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/element-ui.css">
+	<style>
+		#login .content-box{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.el-row {
+			margin-bottom: 0;
+		}
+		.el-row .el-col {
+			border-radius: 4px;
+		}
+		.el-row .bg-purple {
+			background: #d3dce6;
+		}
+		.el-row .grid-content {
+			border-radius: 4px;
+			min-height: 36px;
+		}
+		.login-container{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			width: 400px;
+		}
+		#login .el-input{
+			width: 80%;
+			margin: 10px auto;
+		}
+		#login .el-button{
+			width: 50%;
+			margin: 20px auto 30px auto;
+		}
+	</style>
+	<title>登录</title>
+</head>
+<body>
+	<div id="login">
+		<el-container>
+			<el-header>
+				<el-col :span="24">
+					<div class="grid-content bg-purple-dark">N°辣椒酱后台管理系统</div>
+				</el-col>
+			</el-header>
+			<el-container>
+				<el-container class="content-box">
+					<el-row :gutter="20">
+					  	<el-col :span="120" :offset="60">
+					  		<div class="grid-content bg-purple login-container">
+								<h4>欢迎使用N°辣椒酱后台管理系统</h4>
+								<el-input v-model="input" placeholder="账号"></el-input>
+								<el-input v-model="input" placeholder="密码"></el-input>
+								<el-button type="primary">登录</el-button>
+					  		</div>
+					  	</el-col>
+					</el-row>
+				</el-container>
+			</el-container>
+		</el-container>
+	</div>
+<script src="__PUBLIC__/assets/jquery.js"></script>
+<script src="__PUBLIC__/assets/vue.js"></script>
+<script src="__PUBLIC__/assets/element-ui.js"></script>
+<script>
+    new Vue({
+      el: '#login',
+      data: function() {
+        return {
+        	input : ''
+        }
+      }
+    })
+	$(function(){
+		var doc_all = $(document).height();
+		$('.el-container .el-main').css({
+			'height': doc_all - 60
+		});
+		$('#login .content-box').css({
+			'height': doc_all - 100
+		});
+	})
+  </script>
+</body>
+</html>
