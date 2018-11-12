@@ -1,0 +1,9 @@
+[ 2017-11-22T14:44:02+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'zhoukao3'
+

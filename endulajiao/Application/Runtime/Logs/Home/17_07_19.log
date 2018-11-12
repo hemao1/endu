@@ -1,0 +1,502 @@
+[ 2017-07-19T11:56:02+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-07-19T11:56:10+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2017-07-19T11:56:10+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-07-19T11:56:28+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+ERR: 非法操作:login
+
+[ 2017-07-19T11:56:33+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-07-19T11:56:59+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-07-19T11:57:15+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-07-19T11:59:17+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2017-07-19T11:59:18+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-07-19T11:59:18+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2017-07-19T11:59:18+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-07-19T12:00:27+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2017-07-19T12:00:29+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0513s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-07-19T12:00:30+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-07-19T12:00:30+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-07-19T12:00:30+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-07-19T15:00:59+08:00 ] 127.0.0.1 /month5/day6/thinkphp_3.2.3_full/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `priviller` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `priviller`  [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [2] Missing argument 3 for Home\Controller\IndexController::getList(), called in E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php on line 11 and defined E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: tmp E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: parent_id E:\xiaoyu\month5\day6\thinkphp_3.2.3_full\Application\Home\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
