@@ -20,15 +20,14 @@
 						<el-submenu index="1">
 							<template slot="title"><i class="el-icon-message"></i>导航一</template>
 							<el-menu-item-group>
-								<!-- <template slot="title">分组一</template> -->
-								<el-menu-item index="1-1">选项1</el-menu-item>
-								<el-menu-item index="1-2">选项2</el-menu-item>
+								<router-link to="/page-one"><el-menu-item index="1-1">叫啥不重要1</el-menu-item></router-link>
+								<router-link to="/page-two"><el-menu-item index="1-2">叫啥不重要2</el-menu-item></router-link>
 							</el-menu-item-group>
 						</el-submenu>
 					</el-menu>
 				</el-aside>
 				<el-container>
-					<el-main>欢迎使用N°辣椒酱后台管理系统</el-main>
+					<router-view></router-view>
 				</el-container>
 			</el-container>
 		</el-container>
@@ -36,19 +35,49 @@
 <script src="__PUBLIC__/assets/jquery.js"></script>
 <script src="__PUBLIC__/assets/vue.js"></script>
 <script src="__PUBLIC__/assets/element-ui.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script>
-    new Vue({
-      el: '#app',
-      data: function() {
-        return { visible: false }
-      }
-    })
+	const PageOne = {
+		template: `
+			<div>
+				<form action="tianjia" method="post">
+					<input type="text" name='图片'  value='图片'/> <input type="submit" value='tianjia' />
+				</form>
+			</div>
+		` 
+	};
+	const PageTwo = {
+		template: `
+			<div>PageTwo</div>
+		` 
+	};
+	const routes = [
+		{
+			path: '/page-one',
+			component: PageOne
+		}, {
+			path: '/page-two',
+			component: PageTwo
+		}
+	];
+	const router = new VueRouter({
+		routes // (缩写) 相当于 routes: routes
+	});
+	const app = new Vue({
+		el: '#app',
+		data: function() {
+			return {
+				visible: false
+			}
+		},
+		router
+	}).$mount('#app');
     $(function(){
 		var doc_all = $(document).height();
 		$('.el-container .el-main,.el-aside').css({
 			'height': doc_all - 60
 		})
-	})
-  </script>
+	});
+</script>
 </body>
 </html>
