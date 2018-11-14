@@ -80,24 +80,25 @@
 		template: `
 			<div>
 				<form action="shang" method="post" enctype="multipart/form-data" >
-					<p>
-						图片上传前预览：
-						<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
-						<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
-						<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
-						<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
-					</p>
-					<p>
-					    图片标题:
-					    <input type="text" name="title">
-					</p>
-					<div class="Upimg-box">
-						<img style="width:100%;display:block;" id="xmTanImg"/>
-						<div id="xmTanDiv"></div>
-					</div>	
-					<el-button type="primary" style="padding:0;width:100px;">
-						<input class="submit-btn" type="submit" value="添加">
-					</el-button>
+					<el-form>
+						<p>
+							图片上传前预览：
+							<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
+							<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
+							<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
+							<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
+						</p>
+						<el-form-item label="图片标题:" style="width:80%;">
+					    	<el-input name="title" style="width:50%;"></el-input>
+					  	</el-form-item>
+						<div class="Upimg-box">
+							<img style="width:100%;display:block;" id="xmTanImg"/>
+							<div id="xmTanDiv"></div>
+						</div>	
+						<el-button type="primary" style="padding:0;width:100px;">
+							<input class="submit-btn" type="submit" value="添加">
+						</el-button>
+					</el-form>
 				</form>
 			</div>
 		` 
@@ -106,21 +107,20 @@
 		template: `
 			<div> 
 			<form action="meishi" method="post" enctype="multipart/form-data" >
-				 <p>
+				<el-form>
+					<p>
 						菜品图片：
 						<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
 						<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
 						<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
 						<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
 					</p>
-					<p>
-					    菜品名称:
-					    <input type="text" name="title">
-					</p>
-					<p>
-					    推荐吃法:
-					    <input type="text" name="tuijian">
-					</p>
+					<el-form-item label="图片标题:" style="width:80%;">
+				    	<el-input name="title" style="width:50%;"></el-input>
+				  	</el-form-item>
+					<el-form-item label="推荐吃法:" style="width:80%;">
+				    	<el-input name="tuijian" style="width:50%;"></el-input>
+				  	</el-form-item>
 					<div class="Upimg-box">
 						<img style="width:100%;display:block;" id="xmTanImg"/>
 						<div id="xmTanDiv"></div>
@@ -128,6 +128,7 @@
 					<el-button type="primary" style="padding:0;width:100px;">
 						<input class="submit-btn" type="submit" value="添加">
 					</el-button>
+				</el-form>
 			</form>
 			</div>
 		` 
