@@ -6,59 +6,59 @@ class IndexController extends Controller {
     public function index()
     {
         
-        if(empty($_SESSION['name']))
-      {   session('name',null);
-          $this->success('请先登录', 'login');
-      }
-      else
-      {
+      //   if(empty($_SESSION['name']))
+      // {   session('name',null);
+      //     $this->success('请先登录', 'login');
+      // }
+      // else
+      // {
 
        $this->display();
 
-      }
+      // }
 
     }
     public function login()
     {
 
-        if($_POST)
-        {
-            $username = $_POST['username'];
-            $pwd      = md5($_POST['pwd']);
-            if($username)
-             {
-                    $data = M('user')->where(array('username' =>$username))->find();
-                    $name = $data['username'];
-                    $pwd1  = $data['pwd'];            
-                    if($name == $username && $pwd1 == $pwd)
-                    {
+        // if($_POST)
+        // {
+        //     $username = $_POST['username'];
+        //     $pwd      = md5($_POST['pwd']);
+        //     if($username)
+        //      {
+        //             $data = M('user')->where(array('username' =>$username))->find();
+        //             $name = $data['username'];
+        //             $pwd1  = $data['pwd'];            
+        //             if($name == $username && $pwd1 == $pwd)
+        //             {
 
-                        session_start();
-                        session("name",$name); 
-                        $this->success('登录成功','index');
+        //                 session_start();
+        //                 session("name",$name); 
+        //                 $this->success('登录成功','index');
 
-                    }
-                    else
-                    {
+        //             }
+        //             else
+        //             {
 
-                        $this->success('账号错误','login');
+        //                 $this->success('账号错误','login');
 
-                    }
+        //             }
 
-             }  
-             else
-             {
+        //      }  
+        //      else
+        //      {
 
-                   $this->success('账号不能为空','login'); 
-             } 
+        //            $this->success('账号不能为空','login'); 
+        //      } 
 
-        }
-        else
-        {
+        // }
+        // else
+        // {
 
              $this->display();
 
-        }
+        // }
 
     }
 

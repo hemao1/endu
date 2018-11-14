@@ -5,6 +5,41 @@
 	<link rel="stylesheet" href="__PUBLIC__/admin/admin-style.css">
 	<link rel="stylesheet" href="__PUBLIC__/assets/element-ui.css">
 	<title>N°辣椒酱后台管理系统</title>
+	<style>
+		.content-box{
+			margin: 10px 0 0 30px;
+		}
+		.submit-btn{
+			line-height: 36px;
+			border: 0;
+			font-size: 14px;
+			width: 100%;
+			color: white;
+			background-color: #409EFF;
+			outline: none;
+			cursor: pointer;
+		}
+		.submit-btn:hover{
+			background-color: rgba(232,237,250,.1);
+		}
+		.Upimg-box{
+			max-width: 600px;
+			border: dashed 1px #C5F2FFFF;
+			border-radius: 10px;
+			background-color: #20FEFE07;
+			margin: 30px 0 30px 0;
+			overflow: hidden;
+		}
+		.Upimg-box p{
+			color: #1261637F;
+		}
+		#xdaTanFileImg{
+			margin-left: -105px;
+			padding: 12px 0 10px 38px;
+			outline: none;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
 	<div id="app">
@@ -21,7 +56,7 @@
 						<router-link to="/page-one"><el-menu-item index="1-2">上传图片</el-menu-item></router-link>
 					</el-menu>
 				</el-aside>
-				<el-container>
+				<el-container class="content-box">
 					<router-view></router-view>
 				</el-container>
 			</el-container>
@@ -41,14 +76,20 @@
 		template: `
 			<div>
 				<form action="shang" method="post" enctype="multipart/form-data" >
-			<p>
-                图片上传前预览：<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
-                <input type="button" value="隐藏图片" onclick="document.getElementById('xmTanImg').style.display = 'none';"/>
-                <input type="button" value="显示图片" onclick="document.getElementById('xmTanImg').style.display = 'block';"/>
-            </p>
-            <img id="xmTanImg"/>
-            <div id="xmTanDiv"></div>
-            <input type="submit" value="添加">
+					<p>
+						图片上传前预览：
+						<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
+						<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
+						<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
+						<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
+					</p>
+					<div class="Upimg-box">
+						<img style="width:100%;display:block;" id="xmTanImg"/>
+						<div id="xmTanDiv"></div>
+					</div>
+					<el-button type="primary" style="padding:0;width:100px;">
+						<input class="submit-btn" type="submit" value="添加">
+					</el-button>
 				</form>
 			</div>
 		` 
@@ -74,52 +115,52 @@
 		},
 		router
 	}).$mount('#app');
-    $(function(){
+	$(function(){
 		var doc_all = $(document).height();
 		$('.el-container .el-main,.el-aside').css({
 			'height': doc_all - 60
 		})
 	});
 
-       //判断浏览器是否支持FileReader接口
-            if (typeof FileReader == 'undefined') {
-                document.getElementById("xmTanDiv").InnerHTML = "<h1>当前浏览器不支持FileReader接口</h1>";
-                //使选择控件不可操作
-                document.getElementById("xdaTanFileImg").setAttribute("disabled", "disabled");
-            }
+	   //判断浏览器是否支持FileReader接口
+			if (typeof FileReader == 'undefined') {
+				document.getElementById("xmTanDiv").InnerHTML = "<h1>当前浏览器不支持FileReader接口</h1>";
+				//使选择控件不可操作
+				document.getElementById("xdaTanFileImg").setAttribute("disabled", "disabled");
+			}
 
-            //选择图片，马上预览
-            function xmTanUploadImg(obj) {
-                var file = obj.files[0];
-                
-                console.log(obj);console.log(file);
-                console.log("file.size = " + file.size);  //file.size 单位为byte
+			//选择图片，马上预览
+			function xmTanUploadImg(obj) {
+				var file = obj.files[0];
+				
+				console.log(obj);console.log(file);
+				console.log("file.size = " + file.size);  //file.size 单位为byte
 
-                var reader = new FileReader();
+				var reader = new FileReader();
 
-                //读取文件过程方法
-                reader.onloadstart = function (e) {
-                    console.log("开始读取....");
-                }
-                reader.onprogress = function (e) {
-                    console.log("正在读取中....");
-                }
-                reader.onabort = function (e) {
-                    console.log("中断读取....");
-                }
-                reader.onerror = function (e) {
-                    console.log("读取异常....");
-                }
-                reader.onload = function (e) {
-                    console.log("成功读取....");
+				//读取文件过程方法
+				reader.onloadstart = function (e) {
+					console.log("开始读取....");
+				}
+				reader.onprogress = function (e) {
+					console.log("正在读取中....");
+				}
+				reader.onabort = function (e) {
+					console.log("中断读取....");
+				}
+				reader.onerror = function (e) {
+					console.log("读取异常....");
+				}
+				reader.onload = function (e) {
+					console.log("成功读取....");
 
-                    var img = document.getElementById("xmTanImg");
-                    img.src = e.target.result;
-                    //或者 img.src = this.result;  //e.target == this
-                }
+					var img = document.getElementById("xmTanImg");
+					img.src = e.target.result;
+					//或者 img.src = this.result;  //e.target == this
+				}
 
-                reader.readAsDataURL(file)
-            }
+				reader.readAsDataURL(file)
+			}
 
 
 
