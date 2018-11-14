@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="__PUBLIC__/admin/admin-style.css">
 	<link rel="stylesheet" href="__PUBLIC__/assets/element-ui.css">
-	<title>N°辣椒酱后台管理系统</title>
+	<title>《N°辣椒酱》后台管理系统</title>
 	<style>
 		.content-box{
 			margin: 10px 0 0 30px;
@@ -49,14 +49,15 @@
 		<el-container>
 			<el-header>
 				<el-col :span="24">
-					<div class="grid-content bg-purple-dark">N°辣椒酱后台管理系统</div>
+					<div class="grid-content bg-purple-dark">《N°辣椒酱》后台管理系统</div>
 				</el-col>
 			</el-header>
 			<el-container>
 				<el-aside width="200px" style="background-color: rgb(238, 241, 246)">
 					<el-menu :default-openeds="['1', '3']">
 						<router-link to="/"><el-menu-item index="1-1">首页</el-menu-item></router-link>
-						<router-link to="/page-one"><el-menu-item index="1-2">上传图片</el-menu-item></router-link>
+						<router-link to="/page-one"><el-menu-item index="1-2">轮播图片</el-menu-item></router-link>
+						<router-link to="/page-two"><el-menu-item index="1-3">美食百科</el-menu-item></router-link>
 					</el-menu>
 				</el-aside>
 				<el-container class="content-box">
@@ -86,14 +87,48 @@
 						<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
 						<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
 					</p>
+					<p>
+					    图片标题:
+					    <input type="text" name="title">
+					</p>
 					<div class="Upimg-box">
 						<img style="width:100%;display:block;" id="xmTanImg"/>
 						<div id="xmTanDiv"></div>
-					</div>
+					</div>	
 					<el-button type="primary" style="padding:0;width:100px;">
 						<input class="submit-btn" type="submit" value="添加">
 					</el-button>
 				</form>
+			</div>
+		` 
+	};
+	const PageTwo = {
+		template: `
+			<div> 
+			<form action="meishi" method="post" enctype="multipart/form-data" >
+				 <p>
+						菜品图片：
+						<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
+						<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
+						<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
+						<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
+					</p>
+					<p>
+					    菜品名称:
+					    <input type="text" name="title">
+					</p>
+					<p>
+					    推荐吃法:
+					    <input type="text" name="tuijian">
+					</p>
+					<div class="Upimg-box">
+						<img style="width:100%;display:block;" id="xmTanImg"/>
+						<div id="xmTanDiv"></div>
+					</div>	
+					<el-button type="primary" style="padding:0;width:100px;">
+						<input class="submit-btn" type="submit" value="添加">
+					</el-button>
+			</form>
 			</div>
 		` 
 	};
@@ -104,6 +139,9 @@
 		}, {
 			path: '/page-one',
 			component: PageOne
+		}, {
+			path: '/page-two',
+			component: PageTwo
 		}
 	];
 	const router = new VueRouter({

@@ -66,10 +66,12 @@ class IndexController extends Controller {
     public function shang()
     {
 
-        $img = $_POST['img_name'];
+        $title = $_POST['title'];
+
         $file=$this->do_upload('file_name');
          $m = M("lunbo");
               $obj = array(
+                "title" => $title,
                 "img" => $file
               );
          $data=$m->add($obj);
@@ -77,18 +79,48 @@ class IndexController extends Controller {
          if($data)
          {
 
-            $this->success('添加图片成功','index');
+            $this->success('轮播图添加成功','index');
          }
          else
          {
 
-            $this->success('添加图片失败','index');
+            $this->success('轮播图添加失败','index');
 
          }
 
     }
 
-      public function do_upload($logo,$path='./Public/Uploads')
+    public function meishi()
+    {
+
+      $tuijian = $_POST['tuijian'];
+    
+      $title = $_POST['title'];
+
+      $file=$this->do_upload('file_name');
+
+      $m = M("meishi");
+              $obj = array(
+                "title" => $title,
+                "tuijian" => $tuijian,
+                "img" => $file
+              );
+      $data=$m->add($obj);
+       if($data)
+         {
+
+            $this->success('信息添加成功','index');
+         }
+         else
+         {
+
+            $this->success('信息添加失败','index');
+
+         }
+
+    }
+
+    public function do_upload($logo,$path='./Public/Uploads')
     {
         $fileInfo=$_FILES['file_name'];
 
