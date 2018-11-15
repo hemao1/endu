@@ -1,10 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	《N°辣椒酱》前台
+<block name="header"><include file="Public:header" /></block>
+<style>
+	.swiper-button-next{
+		left: 50%;
+		right: 50%;
+		outline: none;
+		position: absolute;
+		top: auto;
+		bottom: 5%;
+		width: 26px;
+		height: 32px;
+		margin-top: -22px;
+		z-index: 10;
+		cursor: pointer;
+		background-size: 26px 32px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+</style>
+<div class="index-container" id="index-container">
+	<!-- 泡泡 -->
+	<img class="yellow bounceOutUp1" src="__PUBLIC__/home/img/yellow.png">
+	<img class="red bounceOutUp2" src="__PUBLIC__/home/img/red.png">
+	<img class="purple bounceOutUp3" src="__PUBLIC__/home/img/purple.png">
+	<img class="yellow1 bounceOutUp5" src="__PUBLIC__/home/img/yellow.png">
+	<img class="red1 bounceOutUp6" src="__PUBLIC__/home/img/red.png">
+	<img class="purple1 bounceOutUp7" src="__PUBLIC__/home/img/purple.png">
+	<!-- 轮播 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="redGIF-big" src="__PUBLIC__/home/img/redGIF.gif">
+					<img class="redGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_1_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="greenGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="greenGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_2_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="yellowGIF-big" src="__PUBLIC__/home/img/yellowGIF.gif">
+					<img class="yellowGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_3_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="greenGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="greenGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_4_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="greenGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="greenGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_5_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="greenGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="greenGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_6_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="greenGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="greenGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_7_08.jpg">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container">
+					<img class="greenGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="greenGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_01.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_02.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_03.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_04.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_05.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_06.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_07.jpg">
+					<img class="bg-imgs" src="__PUBLIC__/home/img/banner_8_08.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next animated bounce"></div>
+	</div>
+</div>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		slidesPerView : 1,
+		slidesPerGroup : 1,
+		initialSlide: 0,
+		speed: 2000,
+		height: doc_height,
+		direction: 'vertical', // 垂直切换选项
+		loop: true, // 循环模式选项
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false
+		},
+		mousewheel: true,
+		observer:true,//修改swiper自己或子元素时，自动初始化swiper
+		observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		navigation: {
+			nextEl: '.swiper-button-next'
+		},
+	})
+</script>
 </body>
 </html>

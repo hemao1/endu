@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>N度辣椒酱</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/style.css">
+	<link rel="stylesheet" href="__PUBLIC__/assets/element-ui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/swiper.css">
+	<script src="__PUBLIC__/assets/jQuery.js"></script>
+	<script src="__PUBLIC__/home/js/swiper.min.js"></script>
+	<script src="__PUBLIC__/assets/vue.js"></script>
+	<script src="__PUBLIC__/assets/element-ui.js"></script>
+</head>
+<body>
+<div class="nav-container" id="nav-container">
+	<div>
+		<a href="#">
+			<img src="__PUBLIC__/home/img/logo.png">
+		</a>
+	</div>
+	<ul>
+		<li v-for="(x,index) in items" :key="index">
+			<a :href="x.hrefs">
+				<img :src='x.imgSrc' @mouseover="iconHoverIn(index)" @mouseout="iconHoverOut(index)">
+				<p v-text="x.title"></p>
+			</a>
+		</li>
+	</ul>
+</div>
+<script>
+	var doc_height = $(window).height();
+	$(function(){
+		$('.swiper-wrapper').css({
+			'height': doc_height
+		})
+		$('.nav-container').css({
+			'height': doc_height
+		})
+	})
+	new Vue({
+		el: '#nav-container',
+		data: {
+			items : [
+				{
+					title : '公司简介',
+					hrefs : '__URL__/index',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/company-profile.png",
+					navIcon_after: "__PUBLIC__/home/img/company-profile-after.png",
+				},{
+					title : '产品介绍',
+					hrefs : '#',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/product-introduction.png",
+					navIcon_after: "__PUBLIC__/home/img/product-introduction-after.png",
+				},{
+					title : '公司动态',
+					hrefs : '#',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/company-dynamics.png",
+					navIcon_after: "__PUBLIC__/home/img/company-dynamics-after.png",
+				},{
+					title : '美食百科',
+					hrefs : '__URL__/gourmet-encyclopedia',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/gourmet-encyclopedia.png",
+					navIcon_after: "__PUBLIC__/home/img/gourmet-encyclopedia-after.png",
+				},{
+					title : '官方商城',
+					hrefs : '#',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/official-business-city.png",
+					navIcon_after: "__PUBLIC__/home/img/official-business-city-after.png",
+				},{
+					title : '联系我们',
+					hrefs : '#',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/contact-us.png",
+					navIcon_after: "__PUBLIC__/home/img/contact-us-after.png",
+				}
+			]
+		},
+		created(){
+			let _this = this;
+			for ( let i = 0; i < _this.items.length; i++) {
+				_this.items[i].imgSrc = _this.items[i].navIcon
+			}
+		},
+		methods: {
+			iconHoverIn(index){
+				this.items[index].imgSrc = this.items[index].navIcon_after
+			},
+			iconHoverOut(index){
+				this.items[index].imgSrc = this.items[index].navIcon
+			}
+		}
+	})
+</script>
