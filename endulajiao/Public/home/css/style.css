@@ -7,6 +7,10 @@ a{
 	color: #000;
 	text-decoration: none;
 }
+.width_ozzz{
+	width: 1000px;
+	margin: 0 auto;
+}
 .width_otzz{
 	width: 1200px;
 	margin: 0 auto;
@@ -23,6 +27,13 @@ a{
 }
 .color_white{
 	color: white;
+}
+.main-title{
+	font-size: 28px;
+}
+.subtitle{
+	font-size: 14px;
+	color: #919191;
 }
 
 /*--- banner ---*/
@@ -337,7 +348,7 @@ a{
 
 /*------------- 美食百科 --------------*/
 
-#gourmet-encyclopedia .content-container-box > div{
+.encyclopedia-content-container-box > div{
 	width: 100%;
 }
 
@@ -393,8 +404,40 @@ a{
 	width: 9px;
 }
 
+/*------------- 关于酱道 --------------*/
 
+.about-us-content-container-box{
+	text-align: center;
+	margin-top: 40px;
+}
+.about-us-content-container-box ul{
+	margin: 25px auto 40px auto;
+	display: flex;
+	justify-content: space-around;
+}
+.about-us-content-container-box ul li{
+	background-color: red;
+	height: 2px;
+}
+.about-us-li-width{
+	width: 100%;
+}
 
+.fade-enter-active, .fade-leave-active {
+	width: 100%;	
+	transition: all 2s;
+	height: 2px;
+}
+.fade-enter, .fade-leave-to {
+	width: 0;
+	height: 2px;
+}
+
+.about-us-content-container-box .text{
+	width: 800px;
+	margin: 0 auto;
+	line-height: 28px;
+}
 
 
 
