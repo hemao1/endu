@@ -1,0 +1,142 @@
+<block name="header"><include file="Public:header" /></block>
+<div id="product-introduction">
+	<div class="big-banner-box">
+		<img src="__PUBLIC__/home/img/product-introduction-banner.jpg">
+	</div>
+	<div class="product-introduction-content-container-box width_otzz">
+		<img src="__PUBLIC__/home/img/product-introduction-title.jpg">
+		<ul>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-red">
+				</div>
+				<div class="N-box-introduce">
+					<transition name="border">
+						<div v-if="show" class="lineReverse" :class="{'N-box-introduce-width':borderOver}"></div>
+					</transition>
+					<p>名称：0°冰点</p>
+					<p>心情：悲伤</p>
+					<p>心情实话实说：急需帅锅美女安慰</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-blue">
+				</div>
+				<div class="N-box-introduce">
+					<div class="reverse">
+						<transition name="border">
+							<div v-if="show" class="lineReverse" :class="{'N-box-introduce-width':borderOver}"></div>
+						</transition>
+					</div>
+					<p>名称：10°无精打采</p>
+					<p>心情：消极</p>
+					<p>心情实话实说：想去看部励志片电影</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-green">
+				</div>
+				<div class="N-box-introduce">
+					<transition name="border">
+						<div v-if="show" class="line" :class="{'N-box-introduce-width':borderOver}"></div>
+					</transition>
+					<p>名称：58°暴躁</p>
+					<p>心情：暴怒</p>
+					<p>心情实话实说：请闲人与宠物勿近</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-cyan">
+				</div>
+				<div class="N-box-introduce">
+					<div class="reverse">
+						<transition name="border">
+							<div v-if="show" class="lineReverse" :class="{'N-box-introduce-width':borderOver}"></div>
+						</transition>
+					</div>
+					<p>名称：88°容易幻想</p>
+					<p>心情：无聊</p>
+					<p>心情实话实说：不要幻想不该幻想的~</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-white">
+				</div>
+				<div class="N-box-introduce">
+					<transition name="border">
+						<div v-if="show" class="line" :class="{'N-box-introduce-width':borderOver}"></div>
+					</transition>
+					<p>名称：361°与心情无关</p>
+					<p>心情：晕</p>
+					<p>心情实话实说：是脑袋的事情，不是心情的事情</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-black">
+				</div>
+				<div class="N-box-introduce">
+					<div class="reverse">
+						<transition name="border">
+							<div v-if="show" class="lineReverse" :class="{'N-box-introduce-width':borderOver}"></div>
+						</transition>
+					</div>
+					<p>名称：520°只是数字</p>
+					<p>心情：失恋</p>
+					<p>心情实话实说：过量喝辣椒，也有害健康</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-yellow">
+				</div>
+				<div class="N-box-introduce">
+					<transition name="border">
+						<div v-if="show" class="line" :class="{'N-box-introduce-width':borderOver}"></div>
+					</transition>
+					<p>名称：66°好心情</p>
+					<p>心情：愉快</p>
+					<p>心情实话实说：心情好，牙口好，胃口就香</p>
+				</div>
+			</li>
+			<li>
+				<div class="N-box-img">
+					<img src="__PUBLIC__/home/img/N-box-purple">
+				</div>
+				<div class="N-box-introduce">
+					<div class="reverse">
+						<transition name="border">
+							<div v-if="show" class="lineReverse" :class="{'N-box-introduce-width':borderOver}"></div>
+						</transition>
+					</div>
+					<p>名称：99°好到尖叫</p>
+					<p>心情：兴奋</p>
+					<p>心情实话实说：今晚来个party</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$("#nav-container .nav-img").eq(1).attr('src','__PUBLIC__/home/img/product-introduction-after.png');
+	new Vue({
+		el:"#product-introduction",
+		data: {
+			show : false,
+			borderOver : false
+		},
+		created() {
+
+		},
+		mounted() {
+			this.$nextTick(function () {
+				this.show = true
+				this.borderOver = true
+			})
+		}
+	})
+</script>

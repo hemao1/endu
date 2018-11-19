@@ -1,0 +1,68 @@
+<block name="header"><include file="Public:header" /></block>
+<div id="about-us">
+	<div class="big-banner-box">
+		<img src="__PUBLIC__/home/img/contact-us-banner.jpg">
+	</div>
+	<div class="contact-us-content-container-box width_ozzz">
+		<div id="map-container"></div>
+		<div class="msg-container">
+			<div class="address-box contact-us-msg">
+				<img src="__PUBLIC__/home/img/address-icon.png">
+				<span>北京市朝阳区高碑店通惠河畔惠河南街1066号</span>
+			</div>
+			<div class="telephone-box contact-us-msg">
+				<img src="__PUBLIC__/home/img/telephone-icon">
+				<span>+86-10-8622-3128</span>
+			</div>
+			<div class="email-box contact-us-msg">
+				<img src="__PUBLIC__/home/img/email-icon.png">
+				<span>bjhmgroup@163.com</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=006ba3d51a7e5526faa9b49ff7ce6410"></script>
+<script>
+	$("#nav-container .nav-img").eq(5).attr('src','__PUBLIC__/home/img/contact-us-after.png');
+	new Vue({
+		el:"#about-us",
+		data: {
+			show : false,
+			fadeOver : false
+		},
+		created() {
+
+		},
+		mounted() {
+			this.$nextTick(function () {
+				this.show = true
+				this.fadeOver = true
+			})
+		}
+	})
+	var map = new AMap.Map('map-container', {
+		zoom:11,//级别
+		center: [116.507428,39.905831],//中心点坐标
+		viewMode:'3D'//使用3D视图
+	})
+	// 创建一个 Marker 实例：
+	var marker = new AMap.Marker({
+		position: new AMap.LngLat(116.507428,39.905831),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+		title: '北京'
+	});
+
+	// 将创建的点标记添加到已有的地图实例：
+	map.add(marker);
+
+	// 同时引入工具条插件，比例尺插件和鹰眼插件
+	AMap.plugin([
+		'AMap.ToolBar',
+		'AMap.Scale'
+	], function(){
+		// 在图面添加工具条控件，工具条控件集成了缩放、平移、定位等功能按钮在内的组合控件
+		map.addControl(new AMap.ToolBar());
+
+		// 在图面添加比例尺控件，展示地图在当前层级和纬度下的比例尺
+		map.addControl(new AMap.Scale());
+	});
+</script>

@@ -22,7 +22,7 @@
 	<ul>
 		<li v-for="(x,index) in items" :key="index">
 			<a :href="x.hrefs">
-				<img :src='x.imgSrc' @mouseover="iconHoverIn(index)" @mouseout="iconHoverOut(index)">
+				<img :src='x.imgSrc' @mouseover="iconHoverIn(index)" @mouseout="iconHoverOut(index)" class="nav-img">
 				<p v-text="x.title"></p>
 			</a>
 		</li>
@@ -50,13 +50,13 @@
 					navIcon_after: "__PUBLIC__/home/img/company-profile-after.png",
 				},{
 					title : '产品介绍',
-					hrefs : '#',
+					hrefs : '__URL__/product-introduction',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/product-introduction.png",
 					navIcon_after: "__PUBLIC__/home/img/product-introduction-after.png",
 				},{
 					title : '公司动态',
-					hrefs : '#',
+					hrefs : '__URL__/company-dynamics',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/company-dynamics.png",
 					navIcon_after: "__PUBLIC__/home/img/company-dynamics-after.png",
@@ -68,13 +68,13 @@
 					navIcon_after: "__PUBLIC__/home/img/gourmet-encyclopedia-after.png",
 				},{
 					title : '官方商城',
-					hrefs : '#',
+					hrefs : 'http://www.kamelu.com/',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/official-business-city.png",
 					navIcon_after: "__PUBLIC__/home/img/official-business-city-after.png",
 				},{
 					title : '联系我们',
-					hrefs : '#',
+					hrefs : '__URL__/contact-us',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/contact-us.png",
 					navIcon_after: "__PUBLIC__/home/img/contact-us-after.png",
