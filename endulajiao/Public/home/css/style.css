@@ -188,10 +188,10 @@ a{
 .red1,
 .purple,
 .purple1,
-.greenGIF-big,
-.redGIF-big,
-.greenGIF-big-shadow,
-.redGIF-big-shadow{
+.rightGIF-big,
+.leftGIF-big,
+.rightGIF-big-shadow,
+.leftGIF-big-shadow{
 	position: fixed;
 	z-index: 10;
 }
@@ -219,44 +219,44 @@ a{
 	top: 1300px;
 	left: 500px;
 }
-.greenGIF-big{
+.rightGIF-big{
 	position: absolute;
-	bottom: 4%;
+	bottom: 70px;
 	right: 18%;
 	z-index: 100;
 	width: 400px;
 }
-.greenGIF-big-shadow{
+.rightGIF-big-shadow{
 	position: absolute;
-	bottom: 6%;
+	bottom: 80px;
 	right: 22%;
 	z-index: 10;
 	width: 260px;
 }
+.leftGIF-big{
+	position: absolute;
+	bottom:120px;
+	left: 25%;
+	z-index: 1000000;
+	width: 360px;
+}
+.leftGIF-big-shadow{
+	position: absolute;
+	bottom: 120px;
+	left: 29%;
+	z-index: 100;
+	width: 200px;
+}
 .redGIF-big{
 	position: absolute;
-	bottom:6%;
+	bottom:70px;
 	left: 25%;
 	z-index: 1000000;
 	width: 360px;
 }
 .redGIF-big-shadow{
 	position: absolute;
-	bottom: 15%;
-	left: 29%;
-	z-index: 100;
-	width: 200px;
-}
-.yellowGIF-big{
-	position: absolute;
-	bottom:10%;
-	left: 25%;
-	z-index: 1000000;
-	width: 360px;
-}
-.yellowGIF-big-shadow{
-	position: absolute;
-	bottom: 11%;
+	bottom: 165px;
 	left: 29%;
 	z-index: 100;
 	width: 200px;

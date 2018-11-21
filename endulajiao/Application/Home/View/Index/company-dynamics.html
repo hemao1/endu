@@ -1,0 +1,130 @@
+<block name="header"><include file="Public:header" /></block>
+<div id="company-dynamics">
+	<div class="big-banner-box">
+		<img src="__PUBLIC__/home/img/company-dynamics-banner.jpg">
+	</div>
+	<ul class="company-dynamics-content-container-box width_otzz">
+		<li>
+			<a href="#">
+				<span>10-30</span>
+				<div class="text-box">				
+					<p>酱道推出8款全新包装辣椒酱</p>
+					<hr>		
+					<p>十月底推出的8款新产品，点击查看详情</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span>10-30</span>
+				<div class="text-box">
+					<p>酱道推出8款全新包装辣椒酱</p>
+					<hr>		
+					<p>十月底推出的8款新产品，点击查看详情</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span>10-30</span>
+				<div class="text-box">				
+					<p>酱道推出8款全新包装辣椒酱</p>
+					<hr>		
+					<p>十月底推出的8款新产品，点击查看详情</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span>10-30</span>
+				<div class="text-box">				
+					<p>酱道推出8款全新包装辣椒酱</p>
+					<hr>		
+					<p>十月底推出的8款新产品，点击查看详情</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span>10-30</span>
+				<div class="text-box">				
+					<p>酱道推出8款全新包装辣椒酱</p>
+					<hr>		
+					<p>十月底推出的8款新产品，点击查看详情</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span>10-30</span>
+				<div class="text-box">				
+					<p>酱道推出8款全新包装辣椒酱</p>
+					<hr>		
+					<p>十月底推出的8款新产品，点击查看详情</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<!-- 分页 -->
+	<div class="block">
+		<el-pagination
+		prev-text="上一页"
+		next-text="下一页"
+		@current-change="currentChange"
+		:page-size="6"
+		layout="prev, pager, next"
+		:total="totalDataNumber">
+		</el-pagination>
+	</div>
+</div>
+<script>
+	$("#nav-container .nav-img").eq(2).attr('src','__PUBLIC__/home/img/company-dynamics-after.png').css({'pointer-events': 'none'});
+	$('body').css({'background-color' : '#f9f9f9'})
+	new Vue({
+		el:"#company-dynamics",
+		data: {
+			totalDataNumber : 0,
+			menus : []
+		},
+		created(val) {
+			let _this = this
+			$.ajax({
+				url: 'http://47.92.37.138/index.php/Home/baike/xinxi',
+				type: 'GET',
+				dataType: 'JSONP',
+				success: function(res) {
+					const arrData = res.data;
+					for (let i=0; i<arrData.length; i++) {
+						let rep = arrData[i].img;
+						rep = rep.replace("./Public/","")
+						arrData[i].img = rep
+					};
+					let dataLength = res.data.length;
+					_this.totalDataNumber = dataLength;
+					const arr = res.data.slice((val-1)*6,6);
+					_this.menus = arr
+				}
+			})
+		},
+		methods: {
+			currentChange(current) {
+				let _this = this
+				$.ajax({
+					url: 'http://47.92.37.138/index.php/Home/baike/xinxi',
+					type: 'GET',
+					dataType: 'JSONP',
+					success: function(res) {
+						const arrData = res.data;
+						for (let i=0; i<arrData.length; i++) {
+							let rep = arrData[i].img;
+							rep = rep.replace("./Public/","")
+							arrData[i].img = rep
+						};
+						const arr = res.data.slice((current-1)*6,current*6)
+						_this.menus = arr
+					}
+				})
+			}
+		}
+	})
+</script>

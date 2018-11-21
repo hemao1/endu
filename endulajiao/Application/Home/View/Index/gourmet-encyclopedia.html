@@ -68,13 +68,14 @@
 	</div>
 </div>
 <script>
+	$("#nav-container .nav-img").eq(3).attr('src','__PUBLIC__/home/img/gourmet-encyclopedia-after.png').css({'pointer-events': 'none'});
 	new Vue({
 		el: '#gourmet-encyclopedia',
 		data: {
 			totalDataNumber : 0,
 			menus : []
 		},
-		created(val){
+		created(){
 			let _this = this
 			$.ajax({
 				url: 'http://47.92.37.138/index.php/Home/baike/xinxi',
@@ -89,7 +90,7 @@
 					};
 					let dataLength = res.data.length;
 					_this.totalDataNumber = dataLength;
-					const arr = res.data.slice((val-1)*6,6);
+					const arr = res.data.slice(0,6);
 					_this.menus = arr
 				}
 			})
