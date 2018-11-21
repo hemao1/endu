@@ -520,7 +520,7 @@ a{
 #company-dynamics .el-pagination button:disabled,
 #company-dynamics .el-pager li,
 #company-dynamics .el-pagination .btn-next,
-.el-pagination .btn-prev{
+#company-dynamics .el-pagination .btn-prev{
 	background-color: #f9f9f9 !important;
 }
 
