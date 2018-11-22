@@ -79,8 +79,8 @@
 	const PageOne = {
 		template: `
 			<div>
+			<el-form>
 				<form action="shang" method="post" enctype="multipart/form-data" >
-					<el-form>
 						<p>
 							图片上传前预览：
 							<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
@@ -98,16 +98,16 @@
 						<el-button type="primary" style="padding:0;width:100px;">
 							<input class="submit-btn" type="submit" value="添加">
 						</el-button>
-					</el-form>
 				</form>
+				</el-form>
 			</div>
 		` 
 	};
 	const PageTwo = {
 		template: `
 			<div> 
+			<el-form>
 			<form action="meishi" method="post" enctype="multipart/form-data" >
-				<el-form>
 					<p>
 						菜品图片：
 						<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
@@ -128,8 +128,8 @@
 					<el-button type="primary" style="padding:0;width:100px;">
 						<input class="submit-btn" type="submit" value="添加">
 					</el-button>
-				</el-form>
 			</form>
+			</el-form>
 			</div>
 		` 
 	};
