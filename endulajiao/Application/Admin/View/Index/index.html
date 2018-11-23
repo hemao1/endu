@@ -59,7 +59,7 @@
 						<router-link to="/"><el-menu-item index="1-1">首页</el-menu-item></router-link>
 						<router-link to="/page-one"><el-menu-item index="1-2">轮播图片</el-menu-item></router-link>
 						<router-link to="/page-two"><el-menu-item index="1-3">美食百科</el-menu-item></router-link>
-						<router-link to="/page-three"><el-menu-item index="1-4" @click="tabChange()">公司动态</el-menu-item></router-link>
+						<router-link to="/page-three"><el-menu-item index="1-4">公司动态</el-menu-item></router-link>
 					</el-menu>
 				</el-aside>
 				<el-container class="content-box">
@@ -183,18 +183,7 @@
 				visible: false
 			}
 		},
-		router,
-		created(){
-			this.tabChange();
-		},
-		methods:{
-			tabChange(){
-				var um = UM.getEditor('myEditor');
-			}
-		},
-		watch: {
-			'$route': 'fetchData'
-		}
+		router
 	}).$mount('#app');
 
 	$(function(){
@@ -202,6 +191,7 @@
 		$('.el-container .el-main,.el-aside').css({
 			'height': doc_all - 60
 		})
+		var um = UM.getEditor('myEditor');
 	});
 
     //判断浏览器是否支持FileReader接口
