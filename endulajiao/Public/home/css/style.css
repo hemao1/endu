@@ -356,13 +356,17 @@ a{
 
 #gourmet-encyclopedia .items-box{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 #gourmet-encyclopedia .foot-encyclopedia-content-container .items-box li{
 	width: 30%;
 	margin-top: 20px;
+	margin-left: 3.33%;
 	text-align: center;
+}
+#gourmet-encyclopedia .foot-encyclopedia-content-container .items-box li:first-child{
+	margin-left: 0;
 }
 #gourmet-encyclopedia .foot-encyclopedia-content-container .items-box .img-box{
 	height: 200px;
@@ -384,6 +388,11 @@ a{
 #gourmet-encyclopedia .foot-material-content-container .items-box li{
 	width: 30%;
 	margin-top: 30px;
+	margin-left: 3.33%;
+}
+#gourmet-encyclopedia .foot-material-content-container .items-box li:nth-of-type(1),
+#gourmet-encyclopedia .foot-material-content-container .items-box li:nth-of-type(4){
+	margin-left: 0;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box{
 	height: 200px;
