@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="__PUBLIC__/admin/admin-style.css">
 	<link rel="stylesheet" href="__PUBLIC__/assets/element-ui.css">
+	<link href="__PUBLIC__/admin/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
 	<title>《N°辣椒酱》后台管理系统</title>
 	<style>
 		.content-box{
@@ -58,6 +59,7 @@
 						<router-link to="/"><el-menu-item index="1-1">首页</el-menu-item></router-link>
 						<router-link to="/page-one"><el-menu-item index="1-2">轮播图片</el-menu-item></router-link>
 						<router-link to="/page-two"><el-menu-item index="1-3">美食百科</el-menu-item></router-link>
+						<router-link to="/page-three"><el-menu-item index="1-4" @click="tabChange()">公司动态</el-menu-item></router-link>
 					</el-menu>
 				</el-aside>
 				<el-container class="content-box">
@@ -70,6 +72,9 @@
 <script src="__PUBLIC__/assets/vue.js"></script>
 <script src="__PUBLIC__/assets/element-ui.js"></script>
 <script src="__PUBLIC__/assets/vue-router.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/admin/umeditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/admin/umeditor.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lang/zh-cn/zh-cn.js"></script>
 <script>
 	const Index = {
 		template: `
@@ -79,8 +84,8 @@
 	const PageOne = {
 		template: `
 			<div>
-			<el-form>
-				<form action="shang" method="post" enctype="multipart/form-data" >
+				<el-form>
+					<form action="shang" method="post" enctype="multipart/form-data" >
 						<p>
 							图片上传前预览：
 							<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
@@ -98,7 +103,7 @@
 						<el-button type="primary" style="padding:0;width:100px;">
 							<input class="submit-btn" type="submit" value="添加">
 						</el-button>
-				</form>
+					</form>
 				</el-form>
 			</div>
 		` 
@@ -106,32 +111,52 @@
 	const PageTwo = {
 		template: `
 			<div> 
-			<el-form>
-			<form action="meishi" method="post" enctype="multipart/form-data" >
-					<p>
-						菜品图片：
-						<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
-						<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
-						<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
-						<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
-					</p>
-					<el-form-item label="图片标题:" style="width:80%;">
-				    	<el-input name="title" style="width:50%;"></el-input>
-				  	</el-form-item>
-					<el-form-item label="推荐吃法:" style="width:80%;">
-				    	<el-input name="tuijian" style="width:50%;"></el-input>
-				  	</el-form-item>
-					<div class="Upimg-box">
-						<img style="width:100%;display:block;" id="xmTanImg"/>
-						<div id="xmTanDiv"></div>
-					</div>	
-					<el-button type="primary" style="padding:0;width:100px;">
-						<input class="submit-btn" type="submit" value="添加">
-					</el-button>
-			</form>
-			</el-form>
+				<el-form>
+					<form action="meishi" method="post" enctype="multipart/form-data" >
+						<p>
+							菜品图片：
+							<el-button type="primary" style="pointer-events: none;position:relative;cursor: pointer;">选择图片</el-button>
+							<input type="file" id="xdaTanFileImg" name="file_name" onchange="xmTanUploadImg(this)" accept="image/*"/>
+							<el-button type="warning" onclick="document.getElementById('xmTanImg').style.display = 'none';">隐藏图片</el-button>
+							<el-button type="primary" onclick="document.getElementById('xmTanImg').style.display = 'block';">显示图片</el-button>
+						</p>
+						<el-form-item label="图片标题:" style="width:80%;">
+					    	<el-input name="title" style="width:50%;"></el-input>
+					  	</el-form-item>
+						<el-form-item label="推荐吃法:" style="width:80%;">
+					    	<el-input name="tuijian" style="width:50%;"></el-input>
+					  	</el-form-item>
+						<div class="Upimg-box">
+							<img style="width:100%;display:block;" id="xmTanImg"/>
+							<div id="xmTanDiv"></div>
+						</div>	
+						<el-button type="primary" style="padding:0;width:100px;">
+							<input class="submit-btn" type="submit" value="添加">
+						</el-button>
+					</form>
+				</el-form>
 			</div>
 		` 
+	};
+	const PageThree = {
+		template: `
+			<el-form>
+				<form action="" method="post" enctype="multipart/form-data">
+					<el-form-item label="名称:" style="width:80%;">
+				    	<el-input name="title" style="width:50%;"></el-input>
+				  	</el-form-item>
+					<el-form-item label="描述:" style="width:80%;">
+				    	<el-input name="title" style="width:50%;"></el-input>
+				  	</el-form-item>
+
+					<script type="text/plain" id="myEditor" style="width:1000px;height:240px;"><\/script>
+
+					<el-button type="primary" style="padding:0;width:100px; margin-top:30px;">
+						<input class="submit-btn" type="submit" value="提交">
+					</el-button>
+				</form>
+			</el-form>
+		`
 	};
 	const routes = [
 		{
@@ -143,6 +168,9 @@
 		}, {
 			path: '/page-two',
 			component: PageTwo
+		}, {
+			path: '/page-three',
+			component: PageThree
 		}
 	];
 	const router = new VueRouter({
@@ -155,8 +183,20 @@
 				visible: false
 			}
 		},
-		router
+		router,
+		created(){
+			this.tabChange();
+		},
+		methods:{
+			tabChange(){
+				var um = UM.getEditor('myEditor');
+			}
+		},
+		watch: {
+			'$route': 'fetchData'
+		}
 	}).$mount('#app');
+
 	$(function(){
 		var doc_all = $(document).height();
 		$('.el-container .el-main,.el-aside').css({
@@ -164,48 +204,45 @@
 		})
 	});
 
-	   //判断浏览器是否支持FileReader接口
-			if (typeof FileReader == 'undefined') {
-				document.getElementById("xmTanDiv").InnerHTML = "<h1>当前浏览器不支持FileReader接口</h1>";
-				//使选择控件不可操作
-				document.getElementById("xdaTanFileImg").setAttribute("disabled", "disabled");
-			}
+    //判断浏览器是否支持FileReader接口
+	if (typeof FileReader == 'undefined') {
+		document.getElementById("xmTanDiv").InnerHTML = "<h1>当前浏览器不支持FileReader接口</h1>";
+		//使选择控件不可操作
+		document.getElementById("xdaTanFileImg").setAttribute("disabled", "disabled");
+	}
 
-			//选择图片，马上预览
-			function xmTanUploadImg(obj) {
-				var file = obj.files[0];
-				
-				console.log(obj);console.log(file);
-				console.log("file.size = " + file.size);  //file.size 单位为byte
+	//选择图片，马上预览
+	function xmTanUploadImg(obj) {
+		var file = obj.files[0];
+		
+		console.log(obj);console.log(file);
+		console.log("file.size = " + file.size);  //file.size 单位为byte
 
-				var reader = new FileReader();
+		var reader = new FileReader();
 
-				//读取文件过程方法
-				reader.onloadstart = function (e) {
-					console.log("开始读取....");
-				}
-				reader.onprogress = function (e) {
-					console.log("正在读取中....");
-				}
-				reader.onabort = function (e) {
-					console.log("中断读取....");
-				}
-				reader.onerror = function (e) {
-					console.log("读取异常....");
-				}
-				reader.onload = function (e) {
-					console.log("成功读取....");
+		//读取文件过程方法
+		reader.onloadstart = function (e) {
+			console.log("开始读取....");
+		}
+		reader.onprogress = function (e) {
+			console.log("正在读取中....");
+		}
+		reader.onabort = function (e) {
+			console.log("中断读取....");
+		}
+		reader.onerror = function (e) {
+			console.log("读取异常....");
+		}
+		reader.onload = function (e) {
+			console.log("成功读取....");
 
-					var img = document.getElementById("xmTanImg");
-					img.src = e.target.result;
-					//或者 img.src = this.result;  //e.target == this
-				}
+			var img = document.getElementById("xmTanImg");
+			img.src = e.target.result;
+			//或者 img.src = this.result;  //e.target == this
+		}
 
-				reader.readAsDataURL(file)
-			}
-
-
-
+		reader.readAsDataURL(file)
+	}
 </script>
 </body>
 </html>

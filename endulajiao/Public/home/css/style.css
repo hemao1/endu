@@ -221,14 +221,14 @@ a{
 }
 .rightGIF-big{
 	position: absolute;
-	bottom: 70px;
+	bottom: 90px;
 	right: 18%;
 	z-index: 100;
 	width: 400px;
 }
 .rightGIF-big-shadow{
 	position: absolute;
-	bottom: 80px;
+	bottom: 110px;
 	right: 22%;
 	z-index: 10;
 	width: 260px;
@@ -249,15 +249,15 @@ a{
 }
 .redGIF-big{
 	position: absolute;
-	bottom:70px;
-	left: 25%;
+	bottom:100px;
+	left: 38%;
 	z-index: 1000000;
 	width: 360px;
 }
 .redGIF-big-shadow{
 	position: absolute;
-	bottom: 165px;
-	left: 29%;
+	bottom: 195px;
+	left: 44%;
 	z-index: 100;
 	width: 200px;
 }
