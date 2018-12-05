@@ -57,8 +57,6 @@
 		<!-- 分页 -->
 		<div class="block">
 			<el-pagination
-			prev-text="上一页"
-			next-text="下一页"
 			@current-change="currentChange"
 			:page-size="6"
 			layout="prev, pager, next"
@@ -68,7 +66,7 @@
 	</div>
 </div>
 <script>
-	$("#nav-container .nav-img").eq(3).attr('src','__PUBLIC__/home/img/gourmet-encyclopedia-after.png').css({'pointer-events': 'none'});
+	$("#nav-container .nav-container .nav-img").eq(4).attr('src','__PUBLIC__/home/img/gourmet-encyclopedia-after.png').css({'pointer-events': 'none'});
 	new Vue({
 		el: '#gourmet-encyclopedia',
 		data: {

@@ -1,13 +1,10 @@
 <block name="header"><include file="Public:header" /></block>
 <style>
 	.swiper-button-next{
-		left: 50%;
-		right: 50%;
+		width: 95% !important;
 		outline: none;
-		position: absolute;
 		top: auto;
 		bottom: 5%;
-		width: 26px;
 		height: 32px;
 		margin-top: -22px;
 		z-index: 10;
@@ -19,36 +16,36 @@
 </style>
 <div class="index-container" id="index-container">
 	<!-- 泡泡 -->
-	<img class="yellow bounceOutUp1" src="__PUBLIC__/home/img/yellow.png">
-	<img class="red bounceOutUp2" src="__PUBLIC__/home/img/red.png">
-	<img class="purple bounceOutUp3" src="__PUBLIC__/home/img/purple.png">
-	<img class="yellow1 bounceOutUp5" src="__PUBLIC__/home/img/yellow.png">
-	<img class="red1 bounceOutUp6" src="__PUBLIC__/home/img/red.png">
-	<img class="purple1 bounceOutUp7" src="__PUBLIC__/home/img/purple.png">
-	<!-- 轮播 -->
+	<img class="yellow myBounceOutUp1" src="__PUBLIC__/home/img/yellow.png">
+	<img class="red myBounceOutUp2" src="__PUBLIC__/home/img/red.png">
+	<img class="purple myBounceOutUp3" src="__PUBLIC__/home/img/purple.png">
+	<img class="yellow1 myBounceOutUp5" src="__PUBLIC__/home/img/yellow.png">
+	<img class="red1 myBounceOutUp6" src="__PUBLIC__/home/img/red.png">
+	<img class="purple1 myBounceOutUp7" src="__PUBLIC__/home/img/purple.png">
+	<!-- PC轮播 -->
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
 				<div class="bg-banner-container bg-banner-container-1">
-					<img class="leftGIF-big redGIF-big" src="__PUBLIC__/home/img/redGIF.gif">
+					<img class="leftGIF-big redGIF-big" src="__PUBLIC__/home/img/firstGIF.gif">
 					<img class="leftGIF-big-shadow redGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="bg-banner-container bg-banner-container-2">
-					<img class="rightGIF-big" src="__PUBLIC__/home/img/greenGIF.gif">
+					<img class="rightGIF-big" src="__PUBLIC__/home/img/secondGIF.gif">
 					<img class="rightGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="bg-banner-container bg-banner-container-3">
-					<img class="leftGIF-big" src="__PUBLIC__/home/img/yellowGIF.gif">
+					<img class="leftGIF-big" src="__PUBLIC__/home/img/thirdGIF.gif">
 					<img class="leftGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="bg-banner-container bg-banner-container-4">
-					<img class="rightGIF-big" src="__PUBLIC__/home/img/rose-redGIF.gif">
+					<img class="rightGIF-big" src="__PUBLIC__/home/img/fourthGIF.gif">
 					<img class="rightGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
 				</div>
 			</div>
@@ -72,12 +69,114 @@
 			</div>
 			<div class="swiper-slide">
 				<div class="bg-banner-container bg-banner-container-8">
-					<img class="leftGIF-big" src="__PUBLIC__/home/img/grayGIF.gif" style="bottom:35px">
-					<img class="leftGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png" style="bottom:50px">
+					<img class="leftGIF-big" src="__PUBLIC__/home/img/happinessGIF.gif" style="bottom:35px">
+					<img class="leftGIF-big-shadow last-big-shadow" src="__PUBLIC__/home/img/shadow.png" style="bottom:50px">
 				</div>
 			</div>
 		</div>
-		<div class="swiper-button-next animated bounce"></div>
+		<div class="swiper-button-next myBounce"></div>
+	</div>
+	<!-- 移动轮播 -->
+	<div class="swiper-container-mobile">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-1">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">冰点，今天的天气也还算可以呀！为什么我的心情还是如此的糟呢？哦......我想到了，是因为隔壁家的小绿椒不和我玩，呜呜......</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_1.png"">
+					</div>
+					<div class="small-img-box small-img-box-1">
+						<img class="GIF-big firstGIF-big" src="__PUBLIC__/home/img/firstGIF.gif">
+						<img class="GIF-big-shadow firstGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-2">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">最近太累了，无精打采的，那七个小伙伴也不理我，班也不想上，我这是怎么了，身为00后的我，怎么能这样，不行我得先看部励志电影鼓励鼓励自己</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_2.png"">
+					</div>
+					<div class="small-img-box small-img-box-2">
+						<img class="GIF-big" src="__PUBLIC__/home/img/secondGIF.gif">
+						<img class="GIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-3">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">你们谁都别理我，气死我了，那些坏家伙们，一点好吃的都不给我留，都吃光了，气死我了！啊呀呀......</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_3.png"">
+					</div>
+					<div class="small-img-box small-img-box-3">
+						<img class="GIF-big" src="__PUBLIC__/home/img/thirdGIF.gif">
+						<img class="GIF-big-shadow thirdGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-4">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">哇......小红姐好美呀！我最喜欢她了，我要是有她一半漂亮那该有多好呀！嘻嘻......谁呀？干嘛把我叫醒，我要看小红姐姐......</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_4.png"">
+					</div>
+					<div class="small-img-box small-img-box-4">
+						<img class="GIF-big" src="__PUBLIC__/home/img/fourthGIF.gif">
+						<img class="GIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-5">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">小黑，别吵！先让我静一会，接收的信息量有点大，让我缓缓，我已经晕了。哎呀！不行了...不行了...倒了，脑容量不够了，剩下的明天继续吧！</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_5.png"">
+					</div>
+					<div class="small-img-box small-img-box-5">
+						<img class="GIF-big" src="__PUBLIC__/home/img/blueGIF.gif">
+						<img class="GIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-6">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">山无棱，天地和，怎敢与君绝。小橙遇上你是我一生的幸福，希望和你走过一生一世，伴你天涯海角！</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_6.png"">
+					</div>
+					<div class="small-img-box small-img-box-6">
+						<img class="GIF-big" src="__PUBLIC__/home/img/cyanGIF.gif">
+						<img class="GIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-7">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">啦啦啦！今天是个好日子，去找小蓝玩去喽！最喜欢她了，嘻嘻！！！</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_7.png"">
+					</div>
+					<div class="small-img-box small-img-box-7">
+						<img class="GIF-big" src="__PUBLIC__/home/img/orangeGIF.gif">
+						<img class="GIF-big-shadow seventhGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="bg-banner-container bg-banner-container-8">
+					<div class="phone_mood_box">
+						<p class="phone_mood_text">哇哦！发工资喽，今天一定要和小绿玩个嗨，嗯......先去游乐园玩一圈，晚上再来个patry，完美！</p>
+						<img class="phone_mood_img" src="__PUBLIC__/home/img/phone_banner_mood_8.png"">
+					</div>
+					<div class="small-img-box small-img-box-8">
+						<img class="GIF-big" src="__PUBLIC__/home/img/happinessGIF.gif">
+						<img class="GIF-big-shadow eighthGIF-big-shadow" src="__PUBLIC__/home/img/shadow.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next myBounce"></div>
 	</div>
 </div>
 <script>
@@ -85,7 +184,7 @@
 		slidesPerView : 1,
 		slidesPerGroup : 1,
 		initialSlide: 0,
-		speed: 2000,
+		speed: 1000,
 		height: doc_height,
 		direction: 'vertical', // 垂直切换选项
 		loop: true, // 循环模式选项
@@ -100,6 +199,26 @@
 			nextEl: '.swiper-button-next'
 		},
 	})
+	var mySwiperMabile = new Swiper('.swiper-container-mobile', {
+		slidesPerView : 1,
+		slidesPerGroup : 1,
+		initialSlide: 0,
+		speed: 500,
+		height: doc_height,
+		direction: 'vertical', // 垂直切换选项
+		loop: true, // 循环模式选
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false
+		},
+		preventLinksPropagation: false,   // 阻止点击事件冒泡
+		mousewheel: true,
+		observer:true,//修改swiper自己或子元素时，自动初始化swiper
+		observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		navigation: {
+			nextEl: '.swiper-button-next'
+		},
+	});
 </script>
 </body>
 </html>

@@ -8,19 +8,18 @@
 		<p class="subtitle">About us</p>
 		<ul>
 			<transition name="fade">
-				<li v-if="show" :class="{'about-us-li-width':fadeOver}"></li>
+				<li v-if="show" :class="{'about-us-li-width':show}"></li>
 			</transition>
 		</ul>
 		<p class="text">北京酱道科技文化传播有限公司坐落在首都北京房山区燕山港东路17号。酱道是集辣椒培育、生态农业种植、批量收购、技术研发、分装生产、品牌管理、市场营销、电子商务于一体的有限责任公司，拥有布局全国的渠道网络和营销团队。酱道遵在传承传统老酱工艺的基础上，创新性地提出了消费群体“心情指数”匹配“颜色”的新理念。把辣椒酱成功的与心情结合一起，与消费群体融为一起，完美实现了辣椒酱的利口化、温馨化、生态化和时尚化的实践与践行。酱道以鲜食为主打特色的“N°”牌鲜食辣椒酱异军突起，并将致力于这个领域领先发展。</p>
 	</div>
 </div>
 <script>
-	$("#nav-container .nav-img").eq(0).attr('src','__PUBLIC__/home/img/company-profile-after.png').css({'pointer-events': 'none'});
+	$("#nav-container .nav-container .nav-img").eq(1).attr('src','__PUBLIC__/home/img/company-profile-after.png').css({'pointer-events': 'none'});
 	new Vue({
 		el:"#about-us",
 		data: {
-			show : false,
-			fadeOver : false
+			show : false
 		},
 		created() {
 
@@ -28,7 +27,6 @@
 		mounted() {
 			this.$nextTick(function () {
 				this.show = true
-				this.fadeOver = true
 			})
 		}
 	})

@@ -1,22 +1,28 @@
-html,body,ul,li,h1,h2,h3,h4,h5,h6,div,img,p{
+html,body,div,ul,li,h1,h2,h3,h4,h5,h6,a,img,p{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-family: "微软雅黑";
+}
+html{
+	font-size:14px;
 }
 a{
 	color: #000;
 	text-decoration: none;
 }
 .width_ozzz{
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 }
 .width_otzz{
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 }
 .title-icon-box{
-	width: 100px;
+	width: 7rem;
 	margin-top: 30px;
 }
 .title-icon{
@@ -29,18 +35,21 @@ a{
 	color: white;
 }
 .main-title{
-	font-size: 28px;
+	font-size: 2rem;
 }
 .subtitle{
-	font-size: 14px;
+	font-size: 1rem;
 	color: #919191;
 }
 
 /*--- banner ---*/
 
-.big-banner-box img{
+.big-banner-box{
 	width: 100%;
-	min-width: 1200px;
+	overflow: hidden;
+}
+.big-banner-box img{
+	width: 180%;
 }
 
 /*--- 分页 ---*/
@@ -67,29 +76,77 @@ a{
 
 /*--- 导航 ---*/
 
-.phone-nav-container,
-.phone-nav-container-before{
-	display: none;
+#nav-container{
+	position: fixed;
+	z-index: 500;
+	font-weight: bold;
 }
-.nav-container{
-	background-color: rgba(255,255,255,0.6);
-	display: flex;
-	flex-direction: column;
+.phone-nav-container-before{
 	position: fixed;
 	z-index: 1000;
-	box-shadow: 0px 0px 15px #444;
-	padding: 0 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 10%;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 6px 7px;
+	overflow: hidden;
+	right: 1%;
+	top: 20%;
+	transition: all 0.5s;
 }
-.nav-container ul{
+.phone-nav-container-after{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	z-index: 1000;
+	background-size: 10000%;
+	border-radius: 0;
+	width: 100%;
 	height: 100%;
+	right: 0;
+	top: 0;
+	background-color: rgba(255,255,255,0.9);
+	transition: all 0.3s;
 }
-.nav-container li:first-child img{
+.el-icon-close{
+	font-size: 2rem;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 1rem;
+	color: white;
+}
+.phone-nav-container-before-ul{
+	display: flex !important;
+}
+.phone-nav-container-none{
+	display: none !important;
+}
+.phone-nav-container-before ul{
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.phone-nav-container-before-ul li{
+	margin: 0.5rem auto;
+}
+.phone-nav-container-before-ul li:first-child,
+.phone-nav-container-before-ul li:last-child{
 	width: 100%;
 }
-.nav-container li{
-	margin: 30% auto;
-	width: 70%;
-	text-align: center;
+.phone-nav-container-before-ul li:nth-of-type(2),
+.phone-nav-container-before-ul li:nth-of-type(3){
+	width: 50%;
+}
+.phone-nav-container-before-ul li:nth-of-type(4),
+.phone-nav-container-before-ul li:nth-of-type(5){
+	width: 50%;
+}
+.nav-container{
+	display: none;
 }
 
 /*------------- 首页 --------------*/
@@ -208,13 +265,11 @@ a{
 .red,
 .red1,
 .purple,
-.purple1,
-.rightGIF-big,
-.leftGIF-big,
-.rightGIF-big-shadow,
-.leftGIF-big-shadow{
+.purple1{
+	width: 30%;
 	position: fixed;
 	z-index: 10;
+	pointer-events: none;
 }
 .yellow{
 	top: 1300px;
@@ -222,11 +277,11 @@ a{
 }
 .red{
 	top: 1300px;
-	right: 800px;
+	right: 170px;
 }
 .purple{
 	top: 1300px;
-	left: 700px;
+	left: 100px;
 }
 .yellow1{
 	top: 1300px;
@@ -234,56 +289,11 @@ a{
 }
 .red1{
 	top: 1300px;
-	right: 600px;
+	right: 50px;
 }
 .purple1{
 	top: 1300px;
-	left: 500px;
-}
-.rightGIF-big{
-	position: absolute;
-	bottom: 10px;
-	right: 18%;
-	z-index: 100;
-	width: 400px;
-}
-.rightGIF-big-shadow{
-	position: absolute;
-	bottom: 30px;
-	right: 22%;
-	z-index: 10;
-	width: 260px;
-}
-.leftGIF-big{
-	position: absolute;
-	bottom:100px;
-	left: 25%;
-	z-index: 1000000;
-	width: 360px;
-}
-.leftGIF-big-shadow{
-	position: absolute;
-	bottom: 120px;
-	left: 29%;
-	z-index: 100;
-	width: 200px;
-}
-.last-big-shadow{
-	width: 250px;
-}
-.redGIF-big{
-	position: absolute;
-	bottom:40px;
-	left: 38%;
-	z-index: 1000000;
-	width: 360px;
-}
-.redGIF-big-shadow{
-	position: absolute;
-	bottom: 135px;
-	left: 42%;
-	z-index: 100;
-	width: 200px;
+	left: 300px;
 }
 
 /*--- 轮播 ---*/
@@ -292,67 +302,127 @@ a{
 	position: relative;
 	overflow: hidden;
 	width: 100%;
+	height: 100%;
 }
 .bg-banner-container-1{
-	background: url('../img/banner_1.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_1.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-2{
-	background: url('../img/banner_2.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_2.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-3{
-	background: url('../img/banner_3.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_3.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-4{
-	background: url('../img/banner_4.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_4.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-5{
-	background: url('../img/banner_5.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_5.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-6{
-	background: url('../img/banner_6.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_6.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-7{
-	background: url('../img/banner_7.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_7.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .bg-banner-container-8{
-	background: url('../img/banner_8.jpg') no-repeat;
-	background-size: 100% auto;
-	height: 100%;
+	background: url('../img/phone_banner_8.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .swiper-container{
-	position: relative;
-}
-.swiper-container-mobile{
 	display: none;
 }
 
-/*--- PC大图适配 ---*/
+/*--- 心情层 ---*/
 
-@media screen and (max-width: 1850px){
-	.bg-banner-container-1,
-	.bg-banner-container-2,
-	.bg-banner-container-3,
-	.bg-banner-container-4,
-	.bg-banner-container-5,
-	.bg-banner-container-6,
-	.bg-banner-container-7,
-	.bg-banner-container-8{
-		background-size: auto 100%;
-	}
+.phone_mood_box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	margin-left: -32%;
+}
+.phone_mood_text{
+	color: white;
+	font-weight: bold;
+}
+.phone_mood_img{
+	width: 90%;
+	margin-top: 1rem;
+}
+
+/*--- 动漫人物 ---*/
+
+.small-img-box{
+	width: 50%;
+	position: absolute;
+	left: 10%;
+}
+.small-img-box-1{
+	bottom: 35%;
+}
+.small-img-box-2{
+	bottom: 33%;
+}
+.small-img-box-3{
+	bottom: 30%;
+}
+.small-img-box-4{
+	bottom: 33%;
+}
+.small-img-box-5{
+	bottom: 33%;
+}
+.small-img-box-6{
+	bottom: 33%;
+}
+.small-img-box-7{
+	width: 35%;
+	bottom: 27%;
+}
+.small-img-box-8{
+	bottom: 35%;
+}
+.small-img-box .GIF-big{
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+.small-img-box .GIF-big-shadow{
+	position: absolute;
+	width: 70%;
+	top: 145px;
+	left: 40px;
+	z-index: 10;
+}
+.small-img-box .firstGIF-big-shadow{
+	top: 125px;
+}
+.small-img-box .thirdGIF-big-shadow{
+	top: 125px;
+	left: 30px;
+}
+.small-img-box .seventhGIF-big-shadow{
+	top: 170px;
+	left: 30px;
+}
+.small-img-box .seventhGIF-big-shadow{
+	top: 120px;
+	left: 30px;
+}
+.small-img-box .eighthGIF-big-shadow{
+	width: 60%;
+	top: 160px;
 }
 
 /*--- 小箭头动画 ---*/
@@ -402,30 +472,32 @@ a{
 
 /*--- 食百科 ---*/
 
-#gourmet-encyclopedia .items-box{
+#gourmet-encyclopedia .foot-encyclopedia-content-container .items-box{
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
+#gourmet-encyclopedia .content-container-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+}
 #gourmet-encyclopedia .foot-encyclopedia-content-container .items-box li{
-	width: 30%;
-	margin-top: 20px;
-	margin-left: 3.33%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	font-weight: bold;
+	width: 100%;
+	margin-top: 1rem;
 	text-align: center;
 }
-#gourmet-encyclopedia .foot-encyclopedia-content-container .items-box li:first-child{
-	margin-left: 0;
-}
 #gourmet-encyclopedia .foot-encyclopedia-content-container .items-box .img-box{
-	height: 200px;
-	border-radius: 10px;
+	height: 150px;
+	border-radius: 0.5rem;
 	overflow: hidden;
 	margin-bottom: 15px;
-	transition: all 0.3s;
-}
-#gourmet-encyclopedia .foot-encyclopedia-content-container .items-box .img-box:hover{
-	box-shadow: 0 5px 20px 0 #bbb;
-	transition: all 0.3s;
 }
 #gourmet-encyclopedia .foot-encyclopedia-content-container .items-box .img-box img{
 	width: 100%;
@@ -433,39 +505,42 @@ a{
 
 /*--- 荐食材 ---*/
 
+#gourmet-encyclopedia .foot-material-content-container .items-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 #gourmet-encyclopedia .foot-material-content-container .items-box li{
-	width: 30%;
-	margin-top: 30px;
-	margin-left: 3.33%;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	width: 47%;
+	margin-top: 1rem;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box li:nth-of-type(1),
 #gourmet-encyclopedia .foot-material-content-container .items-box li:nth-of-type(4){
 	margin-left: 0;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box{
-	height: 200px;
-	border-radius: 10px;
+	width: 100%;
+	border-radius: 0.3rem;
 	border: solid 1px #b1559e;
 	overflow: hidden;
 	margin-bottom: 15px;
 	text-align: center;
-	transition: all 0.3s;
-}
-#gourmet-encyclopedia .foot-material-content-container .items-box .img-box:hover{
-	box-shadow: 0 5px 20px 0 #c38fb8;
-	transition: all 0.3s;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box .img{
-	height: 150px;
+	height: auto;
 	overflow: hidden;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box .img img{
 	width: 100%;
+	display: block;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box .tag{
 	background-color: #b1559e;
-	line-height: 50px;
-	height: 50px;
+	line-height: 2.5rem;
+	height: 2.5rem;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .text-box img{
 	width: 9px;
@@ -475,10 +550,11 @@ a{
 
 .about-us-content-container-box{
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 1rem;
 }
 .about-us-content-container-box ul{
-	margin: 25px auto 40px auto;
+	width: 90%;
+	margin: 1rem auto;
 	display: flex;
 	justify-content: space-around;
 }
@@ -499,19 +575,19 @@ a{
 	height: 2px;
 }
 .about-us-content-container-box .text{
-	width: 800px;
-	margin: 0 auto;
-	line-height: 28px;
+	width: 90%;
+	margin: 0 auto 2rem auto;
+	line-height: 2rem;
 }
 
 /*------------- 联系我们 --------------*/
 
 #map-container{
-	width: 580px;
-	height: 350px;
+	width: 100%;
+	height: 300px;
 }
 .msg-container{
-	align-self: flex-end;
+	align-self: flex-start;
 }
 .contact-us-msg{
 	display: flex;
@@ -521,43 +597,51 @@ a{
 }
 .contact-us-msg img{
 	margin-right: 10px;
+	margin-top: 4px;
+	width: 15px;
+	height: 100%;
+}
+.address-box img{
+	margin-top: 0;
+}
+.tel-num{
+	text-decoration: underline;
 }
 .contact-us-content-container-box{
+	width: 90%;
 	display: flex;
-	justify-content: space-between;
-	margin-top: 80px;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px auto;
 }
 
 /*------------- 公司动态 --------------*/
 
 .company-dynamics-content-container-box{
+	width: 90%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	flex-wrap: wrap;
-	margin-top: 10px;
 }
 .company-dynamics-content-container-box li{
-	width: 375px;
-	height: 260px;
+	width: 100%;
+	height: 200px;
 	background-color: white;
-	margin-top: 40px;
-	padding: 10px;
+	margin-top: 2rem;
 	position: relative;
-	transition: all 0.3s;
 }
 .company-dynamics-content-container-box li a{
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-.company-dynamics-content-container-box li:hover{
-	box-shadow: 0 5px 15px 0 #dcdcdc;
-	transition: all 0.3s;
-}
 .company-dynamics-content-container-box li .text-box{
 	position: absolute;
+	display: flex;
+	flex-direction: column;
 	bottom: 20px;
-	width: 375px;
+	padding: 0 5%;
+	width: 90%;
 }
 .company-dynamics-content-container-box li .text-box hr{
 	border: 0;
@@ -583,40 +667,54 @@ a{
 /*------------- 产品介绍 --------------*/
 
 .product-introduction-content-container-box > h3{
-	display: none;
+	font-size: 2rem;
+	text-align: center;
+	margin: 1rem auto;
 }
 .product-introduction-content-container-box > img{
-	display: block;
-	margin: 30px auto 0 auto;
+	display: none;
 }
 .product-introduction-content-container-box ul{
-	margin: 20px auto 60px auto;
+	width: 90%;
+	margin: 0 auto 60px auto;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .product-introduction-content-container-box ul li{
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
 }
+.product-introduction-content-container-box ul li:first-child{
+	margin-top: 10px;
+}
 .N-box-img{
 	border: solid 1px #999;
-	width: 390px;
-	height: 340px;
+	width: 50%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 20px 10px 10px 10px;
+}
+.N-box-img img{
+	width: 80%;
 }
 .N-box-introduce{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	width: 760px;
+	width: 100%;
 }
 .N-box-introduce p{
-	width: 100%;
+	width: 90%;
+	padding: 1rem 5% 0 5%;
+}
+.N-box-introduce p:nth-of-type(1){
+	font-weight: bold; 
 }
 .N-box-introduce p:last-child{
 	margin-bottom: 30px;
@@ -641,7 +739,7 @@ a{
 	height: 1px;
 }
 .reverse{
-	width: 760px;
+	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	height: 1px;

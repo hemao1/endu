@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 	<title>N度辣椒酱</title>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/style.css">
+	<script>
+		// 判断是否为移动端运行环境 
+		if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+			if (window.location.href.indexOf("?mobile") < 0) {
+				try {
+					if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+						// 判断访问环境是 Android|webOS|iPhone|iPod|BlackBerry 则加载以下样式 
+						setActiveStyleSheet("__PUBLIC__/home/css/phone.css");
+						setActiveStyleSheet("__PUBLIC__/home/css/animate.css");
+					} 
+					else if (/iPad/i.test(navigator.userAgent)) {
+						// 判断访问环境是 iPad 则加载以下样式 
+						setActiveStyleSheet("__PUBLIC__/home/css/style.css");
+					}
+				} catch (e) {}
+			}
+		} else {
+			// 如果以上都不是，则加载以下样式 
+			setActiveStyleSheet("__PUBLIC__/home/css/style.css");
+		}
+		// 判断完毕后加载样式 
+		function setActiveStyleSheet(filename) {
+			document.write("<link href=" + filename + " rel=stylesheet>");
+		}
+		console.log('%c    _   __   _\n   / | / /  (_)\n  /  |/ /\n / /|  /       \n/_/ |_/\n\n %c N°辣椒酱，懂你心情的美味辣椒酱~\n','font-size:30px;','color:red;');
+	</script>
 	<link rel="stylesheet" href="__PUBLIC__/assets/element-ui.css">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/swiper.css">
 	<script src="__PUBLIC__/assets/jQuery.js"></script>
@@ -13,68 +38,141 @@
 	<script src="__PUBLIC__/assets/element-ui.js"></script>
 </head>
 <body>
-<div class="nav-container" id="nav-container">
-	<div>
-		<a href="__URL__/index">
-			<img src="__PUBLIC__/home/img/logo.png">
-		</a>
+<div id="nav-container">
+	<div class="phone-nav-container-before" :class="{'phone-nav-container-after':isShow}" @click="phoneOpenNav">
+		<ul :class="{'phone-nav-container-before-ul':isShow}">
+			<li v-for="(x,index) in phoneItems" :key="index" class="animated" :class="{'bounceInUp':isShow}">
+				<a :href="x.hrefs">
+					<img :src='x.navIcon_after' class="nav-img">
+					<p v-text="x.title"></p>
+				</a>
+				<div :class="x.closeIcon" ></div>
+			</li>
+		</ul>
 	</div>
-	<ul>
-		<li v-for="(x,index) in items" :key="index">
-			<a :href="x.hrefs">
-				<img :src='x.imgSrc' @mouseover="iconHoverIn(index)" @mouseout="iconHoverOut(index)" class="nav-img">
-				<p v-text="x.title"></p>
-			</a>
-		</li>
-	</ul>
+	<div class="nav-container">
+		<ul>
+			<li v-for="(x,index) in items" :key="index">
+				<a :href="x.hrefs">
+					<img :src='x.imgSrc' @mouseover="iconHoverIn(index)" @mouseout="iconHoverOut(index)" class="nav-img">
+					<p v-text="x.title"></p>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
 <script>
 	var doc_height = $(window).height();
+	var doc_width = $(window).width();
 	$(function(){
 		$('.swiper-wrapper,.nav-container').css({
 			'height': doc_height
-		})
+		});
+		$('.phone-nav-container-before ul li:nth-of-type(2)').css({
+			'animation-delay': '50ms',
+			'-webkit-animation-delay': '50ms'
+		});
+		$('.phone-nav-container-before ul li:nth-of-type(3)').css({
+			'animation-delay': '100ms',
+			'-webkit-animation-delay': '100ms'
+		});
+		$('.phone-nav-container-before ul li:nth-of-type(4)').css({
+			'animation-delay': '150ms',
+			'-webkit-animation-delay': '150ms'
+		});
+		$('.phone-nav-container-before ul li:nth-of-type(5)').css({
+			'animation-delay': '200ms',
+			'-webkit-animation-delay': '200ms'
+		});
+		$('.phone-nav-container-before ul li:nth-of-type(6)').css({
+			'animation-delay': '250ms',
+			'-webkit-animation-delay': '250ms'
+		});
+		$('.phone-nav-container-before ul li:nth-of-type(7)').css({
+			'animation-delay': '300ms',
+			'-webkit-animation-delay': '300ms'
+		});
 	})
 	new Vue({
 		el: '#nav-container',
 		data: {
+			isShow: false,
+			phoneItems : [
+				{
+					title : '首页',
+					hrefs : '__URL__/index',
+					navIcon_after: "__PUBLIC__/home/img/logo.png"
+				},{
+					title : '公司简介',
+					hrefs : '__URL__/about-us',
+					navIcon_after: "__PUBLIC__/home/img/company-profile-after.png"
+				},{
+					title : '产品介绍',
+					hrefs : '__URL__/product-introduction',
+					navIcon_after: "__PUBLIC__/home/img/product-introduction-after.png"
+				},{
+					title : '公司动态',
+					hrefs : '__URL__/company-dynamics',
+					navIcon_after: "__PUBLIC__/home/img/company-dynamics-after.png"
+				},{
+					title : '美食百科',
+					hrefs : '__URL__/gourmet-encyclopedia',
+					navIcon_after: "__PUBLIC__/home/img/gourmet-encyclopedia-after.png"
+				},{
+					title : '官方商城',
+					hrefs : 'http://www.chuhedashu.com',
+					navIcon_after: "__PUBLIC__/home/img/official-business-city-after.png"
+				},{
+					title : '联系我们',
+					hrefs : '__URL__/contact-us',
+					navIcon_after: "__PUBLIC__/home/img/contact-us-after.png"
+				},{
+					closeIcon : 'el-icon-close'
+				}
+			],
 			items : [
 				{
+					title : '',
+					hrefs : '__URL__/index',
+					imgSrc : '',
+					navIcon: "__PUBLIC__/home/img/logo.png",
+					navIcon_after: "__PUBLIC__/home/img/logo.png"
+				},{
 					title : '公司简介',
 					hrefs : '__URL__/about-us',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/company-profile.png",
-					navIcon_after: "__PUBLIC__/home/img/company-profile-after.png",
+					navIcon_after: "__PUBLIC__/home/img/company-profile-after.png"
 				},{
 					title : '产品介绍',
 					hrefs : '__URL__/product-introduction',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/product-introduction.png",
-					navIcon_after: "__PUBLIC__/home/img/product-introduction-after.png",
+					navIcon_after: "__PUBLIC__/home/img/product-introduction-after.png"
 				},{
 					title : '公司动态',
 					hrefs : '__URL__/company-dynamics',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/company-dynamics.png",
-					navIcon_after: "__PUBLIC__/home/img/company-dynamics-after.png",
+					navIcon_after: "__PUBLIC__/home/img/company-dynamics-after.png"
 				},{
 					title : '美食百科',
 					hrefs : '__URL__/gourmet-encyclopedia',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/gourmet-encyclopedia.png",
-					navIcon_after: "__PUBLIC__/home/img/gourmet-encyclopedia-after.png",
+					navIcon_after: "__PUBLIC__/home/img/gourmet-encyclopedia-after.png"
 				},{
 					title : '官方商城',
 					hrefs : 'http://www.chuhedashu.com',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/official-business-city.png",
-					navIcon_after: "__PUBLIC__/home/img/official-business-city-after.png",
+					navIcon_after: "__PUBLIC__/home/img/official-business-city-after.png"
 				},{
 					title : '联系我们',
 					hrefs : '__URL__/contact-us',
 					imgSrc : '',
 					navIcon: "__PUBLIC__/home/img/contact-us.png",
-					navIcon_after: "__PUBLIC__/home/img/contact-us-after.png",
+					navIcon_after: "__PUBLIC__/home/img/contact-us-after.png"
 				}
 			]
 		},
@@ -90,6 +188,9 @@
 			},
 			iconHoverOut(index){
 				this.items[index].imgSrc = this.items[index].navIcon
+			},
+			phoneOpenNav(){
+				this.isShow = !this.isShow;
 			}
 		}
 	})
