@@ -6,63 +6,70 @@ class IndexController extends Controller {
     public function index()
     {
         
-      //   if(empty($_SESSION['name']))
-      // {   session('name',null);
-      //     $this->success('请先登录', 'login');
-      // }
-      // else
-      // {
+        if(empty($_SESSION['name']))
+      {   session('name',null);
+          $this->success('请先登录', 'login');
+      }
+      else
+      {
 
        $this->display();
 
-      // }
-
+      }
     }
+    /*登录功能*/
     public function login()
     {
 
-        // if($_POST)
-        // {
-        //     $username = $_POST['username'];
-        //     $pwd      = md5($_POST['pwd']);
-        //     if($username)
-        //      {
-        //             $data = M('user')->where(array('username' =>$username))->find();
-        //             $name = $data['username'];
-        //             $pwd1  = $data['pwd'];            
-        //             if($name == $username && $pwd1 == $pwd)
-        //             {
+        if($_POST)
+        {
+            $username = $_POST['username'];
+            $pwd      = md5($_POST['pwd']);
+            if($username)
+             {
+                    $data = M('user')->where(array('username' =>$username))->find();
+                    $name = $data['username'];
+                    $pwd1  = $data['pwd'];            
+                    if($name == $username)
+                    {
 
-        //                 session_start();
-        //                 session("name",$name); 
-        //                 $this->success('登录成功','index');
+                        if($pwd1 == $pwd)
+                        {
 
-        //             }
-        //             else
-        //             {
+                          session_start();
+                          session("name",$name); 
+                          $this->success('登录成功','index');
 
-        //                 $this->success('账号错误','login');
+                        }
+                        else
+                        {
 
-        //             }
+                          $this->success('密码错误','login');
 
-        //      }  
-        //      else
-        //      {
+                        }
 
-        //            $this->success('账号不能为空','login'); 
-        //      } 
+                    }
+                    else
+                    {
 
-        // }
-        // else
-        // {
+                        $this->success('用户名错误','login');
 
+                    }
+
+             }  
+             else
+             {
+
+                   $this->success('账号不能为空','login'); 
+             } 
+        }
+        else
+        {
              $this->display();
-
-        // }
-
+        }
     }
 
-
+    /*添加轮播图*/
     public function shang()
     {
 
@@ -78,18 +85,15 @@ class IndexController extends Controller {
 
          if($data)
          {
-
             $this->success('轮播图添加成功','index');
          }
          else
          {
-
             $this->success('轮播图添加失败','index');
-
          }
 
     }
-
+    /*美食百科*/
     public function meishi()
     {
 
@@ -119,7 +123,7 @@ class IndexController extends Controller {
          }
 
     }
-
+    /*图片上传类*/
     public function do_upload($logo,$path='./Public/Uploads')
     {
         $fileInfo=$_FILES['file_name'];
