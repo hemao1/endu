@@ -504,7 +504,9 @@ a{
 }
 
 /*--- 荐食材 ---*/
-
+#gourmet-encyclopedia .foot-material-content-container{
+	margin-bottom: 50px;
+}
 #gourmet-encyclopedia .foot-material-content-container .items-box{
 	display: flex;
 	flex-wrap: wrap;
@@ -530,7 +532,9 @@ a{
 	text-align: center;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box .img{
-	height: auto;
+	height: 130px;
+    display: flex;
+    align-items: center;
 	overflow: hidden;
 }
 #gourmet-encyclopedia .foot-material-content-container .items-box .img-box .img img{
@@ -747,4 +751,18 @@ a{
 .N-box-introduce .lineReverse{
 	height: 1px;
 	background-color: #999;
+}
+
+/*-- 公司动态详情 --*/
+.company-dynamics-details-content-container-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.company-dynamics-details-content-container-box li{
+	width: 40%;
+	margin-top: 35px;
+}
+.company-dynamics-details-content-container-box li img{
+	width: 100%;
 }
